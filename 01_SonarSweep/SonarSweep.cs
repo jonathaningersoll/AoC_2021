@@ -11,8 +11,8 @@ namespace _01_SonarSweep
     {
         public void Run()
         {
-            PartOne();
-            //PartTwo();
+            //PartOne();
+            PartTwo();
         }
 
         private void PartOne()
@@ -27,7 +27,7 @@ namespace _01_SonarSweep
 
         private void PartTwo()
         {
-            var input = File.ReadAllLines(@"./input.txt").Select(x => int.Parse(x)).ToList();
+            var input = File.ReadAllLines(@"./input.txt").Select(int.Parse).ToList();
             //var input = File.ReadAllLines(@"./testInput.txt").Select(x => int.Parse(x)).ToList();
 
             var slidingMeasurement = new List<int>();
@@ -36,8 +36,7 @@ namespace _01_SonarSweep
 
             while(iterator < input.Count - 2)
             {
-                var m = input.GetRange(iterator,3).Sum(x => x);
-                Console.WriteLine(m);
+                var m = input.GetRange(iterator,3).Sum();
                 slidingMeasurement.Add(m);
                 iterator++;
             }
