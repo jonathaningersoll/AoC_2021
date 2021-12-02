@@ -11,12 +11,14 @@ namespace _01_SonarSweep
     {
         public void Run()
         {
-            PartTwo();
+            PartOne();
+            //PartTwo();
         }
 
         private void PartOne()
         {
-            var input = File.ReadAllLines(@"./input.txt").Select(x => int.Parse(x)).ToList();
+            //var input = File.ReadAllLines(@"./input.txt").Select(x => int.Parse(x)).ToList();
+            var input = File.ReadAllLines(@"./input.txt").Select(int.Parse).ToList();
 
             var numberOfTimesDepthIncreases = CalculateDepthIncreases(input);
 
