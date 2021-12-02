@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace _01_SonarSweep
 {
+
+    // LEARNING: Learned 'Method Reference' for lambda expressions.
     public class SonarSweep
     {
         public void Run()
