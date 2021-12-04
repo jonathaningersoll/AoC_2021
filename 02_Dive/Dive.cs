@@ -18,16 +18,21 @@ namespace _02_Dive
         private void PartOne()
         {
             var input = File.ReadAllLines(@"./input.txt").ToList();
-            //var input = File.ReadAllLines(@"./testInput.txt").ToList();
+            //var input = File.ReadAllLines(@"./testInput.txt").ToList
 
-            // WORDY:
-            //int forward = input.Where(x => x.Contains("forward")).ToList().Select(x => int.Parse(x.Last().ToString())).Sum();
-            //int depth = input.Where(x => x.Contains("down")).ToList().Select(x => int.Parse(x.Last().ToString())).Sum();
-            //depth = depth - input.Where(x => x.Contains("up")).ToList().Select(x => int.Parse(x.Last().ToString())).Sum();
-            //Console.WriteLine(depth*forward);
-
-            Console.WriteLine((input.Where(x => x.Contains("down")).ToList().Select(x => int.Parse(x.Last().ToString())).Sum() - input.Where(x => x.Contains("up")).ToList().Select(x => int.Parse(x.Last().ToString())).Sum()) * input.Where(x => x.Contains("forward")).ToList().Select(x => int.Parse(x.Last().ToString())).Sum());
-
+            int forward = input
+                .Where(x => x.Contains("forward"))
+                .Select(x => int.Parse(x.Last().ToString()))
+                .Sum();
+            int depth = input
+                .Where(x => x.Contains("down"))
+                .Select(x => int.Parse(x.Last().ToString()))
+                .Sum();
+            depth = depth - input
+                .Where(x => x.Contains("up"))
+                .Select(x => int.Parse(x.Last().ToString()))
+                .Sum();
+            Console.WriteLine(depth * forward);
         }
 
         private void PartTwo()
