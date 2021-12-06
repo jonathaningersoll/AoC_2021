@@ -41,37 +41,6 @@ namespace _03_BinaryDiagnostic
             Console.WriteLine(epsilonValue);
             Console.WriteLine(gammaValue* epsilonValue);
             Console.ReadKey();
-
-            //gamma[0] = input.Where(x => x[0] == '1').Count() > (input.Count() / 2) ? 2048 : 0;
-            //gamma[1] = input.Where(x => x[1] == '1').Count() > (input.Count() / 2) ? 1024 : 0;
-            //gamma[2] = input.Where(x => x[2] == '1').Count() > (input.Count() / 2) ? 512 : 0;
-            //gamma[3] = input.Where(x => x[3] == '1').Count() > (input.Count() / 2) ? 256 : 0;
-            //gamma[4] = input.Where(x => x[4] == '1').Count() > (input.Count() / 2) ? 128 : 0;
-            //gamma[5] = input.Where(x => x[5] == '1').Count() > (input.Count() / 2) ? 64 : 0;
-            //gamma[6] = input.Where(x => x[6] == '1').Count() > (input.Count() / 2) ? 32 : 0;
-            //gamma[7] = input.Where(x => x[7] == '1').Count() > (input.Count() / 2) ? 16 : 0;
-            //gamma[8] = input.Where(x => x[8] == '1').Count() > (input.Count() / 2) ? 8 : 0;
-            //gamma[9] = input.Where(x => x[9] == '1').Count() > (input.Count() / 2) ? 4 : 0;
-            //gamma[10] = input.Where(x => x[10] == '1').Count() > (input.Count() / 2) ? 2 : 0;
-            //gamma[11] = input.Where(x => x[11] == '1').Count() > (input.Count() / 2) ? 1 : 0;
-
-            //epsilon[0] = input.Where(x => x[0] == '1').Count() < (input.Count() / 2) ? 2048 : 0;
-            //epsilon[1] = input.Where(x => x[1] == '1').Count() < (input.Count() / 2) ? 1024 : 0;
-            //epsilon[2] = input.Where(x => x[2] == '1').Count() < (input.Count() / 2) ? 512 : 0;
-            //epsilon[3] = input.Where(x => x[3] == '1').Count() < (input.Count() / 2) ? 256 : 0;
-            //epsilon[4] = input.Where(x => x[4] == '1').Count() < (input.Count() / 2) ? 128 : 0;
-            //epsilon[5] = input.Where(x => x[5] == '1').Count() < (input.Count() / 2) ? 64 : 0;
-            //epsilon[6] = input.Where(x => x[6] == '1').Count() < (input.Count() / 2) ? 32 : 0;
-            //epsilon[7] = input.Where(x => x[7] == '1').Count() < (input.Count() / 2) ? 16 : 0;
-            //epsilon[8] = input.Where(x => x[8] == '1').Count() < (input.Count() / 2) ? 8 : 0;
-            //epsilon[9] = input.Where(x => x[9] == '1').Count() < (input.Count() / 2) ? 4 : 0;
-            //epsilon[10] = input.Where(x => x[10] == '1').Count() < (input.Count() / 2) ? 2 : 0;
-            //epsilon[11] = input.Where(x => x[11] == '1').Count() < (input.Count() / 2) ? 1 : 0;
-
-            //Console.WriteLine(gamma.Sum());
-            //Console.WriteLine(epsilon.Sum());
-
-            //Console.WriteLine("Computed value: " + gamma.Sum() * epsilon.Sum());
         }
 
         private void PartOne()
