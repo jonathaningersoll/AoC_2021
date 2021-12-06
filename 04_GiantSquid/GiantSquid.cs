@@ -72,7 +72,6 @@ namespace _04_GiantSquid
         private void Puzzle()
         {
             PartOne();
-            //PartTwo();
         }
 
         private void PartOne()
