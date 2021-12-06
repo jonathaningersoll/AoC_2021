@@ -57,9 +57,7 @@ namespace _04_GiantSquid
     public class GiantSquid
     {
         public int CurrentDraw { get; set; }
-        public int RoundNumber { get; set; }
         public List<int> SolvedBoards { get; set; } = new List<int>();
-        public int Board { get; set; }
         public List<Board> Boards { get; set; }
         public List<int> Deck { get; set; }
         public List<Board> BoardsToRemove { get; set; } = new List<Board>();
